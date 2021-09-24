@@ -1,0 +1,25 @@
+{
+  "name": "messenger-webhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgremaud/messenger-webhook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgremaud/messenger-webhook/issues"
+  },
+  "homepage": "https://github.com/cgremaud/messenger-webhook#readme",
+  "description": ""
+}
