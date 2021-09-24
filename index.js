@@ -24,3 +24,22 @@ app.post('/webhook', (req, res) => {
         res.sendStatus(404);
     }
 });
+
+app.get('/webhook', (req, res) => {
+    //My verify token. 
+    let VERIFY_TOKEN = "<TOKEN GOES HERE>";
+
+    //Parse query params
+    let mode = req.query['hub.mode'];
+    let token = req.query['hub.verify_token'];
+    let challenge = req.query['hub.challenge'];
+
+    //Checks if token and mode is in the query string of the request
+    if (mode && token) {
+        //Respons with challenge token from request
+        console.log('WEBHOOK_VERIFIED');
+        res.status(200).send(challenge);
+    } else {
+        res.sendStatus(403);
+    }
+});
