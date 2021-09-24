@@ -27,7 +27,7 @@ app.post('/webhook', (req, res) => {
 
 app.get('/webhook', (req, res) => {
     //My verify token. 
-    let VERIFY_TOKEN = "<TOKEN GOES HERE>";
+    let VERIFY_TOKEN = "<TOKEN_GOES_HERE>";
 
     //Parse query params
     let mode = req.query['hub.mode'];
